@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import MobNav from "@/components/MobNav";
 import Nav from "@/components/Nav";
 import React, { useState } from "react";
@@ -7,9 +8,9 @@ const HomePage = () => {
   const open = () => {
     setNav(true);
   };
-  const close = () =>{
-    setNav(false)
-  }
+  const close = () => {
+    setNav(false);
+  };
 
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
         <div>
           <MobNav nav={nav} close={close} />
           <Nav open={open} />
+          <Hero />
         </div>
       </div>
     </>
